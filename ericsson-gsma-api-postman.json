@@ -32,6 +32,20 @@
 	},
 	{
 		"collectionId": "a6363f1d-3a30-31fd-b8b8-bcd034310700",
+		"id": "476b1f24-4d1e-5f75-177d-5ff95974423f",
+		"name": "Get Identity",
+		"description": "Use this API to retrieve the subscriber's identity information.  \nThe API format is: http://52.28.29.68:1081/rest/OpenIdConnect/v1/userinfo?ownerId=<userId>  \n\nThis API need to involve the Oauth authorization code flow to exchange token, so to user the API, Oauth flow is needed.  \n\nTo test the API, follow the following procedure to get the Oauth Token:\n\nStep 1: Open http://52.28.29.68:1082/oauth2/playground/\n\nStep 2: Set the Client drop down to \"ESIF_Identity_OAUTH_APP\"\n\nStep 3: Select the Scopes you want to access\n\nStep 4: Set the redirect URL to: http://52.28.29.68:1082/oauth2/playground/callback/ESIF_Identity_OAUTH_APP\n\nStep 5: Click the \"Send Authorization Request\" button\n\nStep 6: Simulate the user login (use username/password: usera/usera) and authorization process\n\nStep 7: Click \"Exchange Token\"\n\nStep 8: Copy the token in the \"Token validation\" section and put it into the Authorization Bear and test the API \n",
+		"url": "http://52.28.29.68:1081/rest/OpenIdConnect/v1/userinfo?ownerId=userea ",
+		"method": "GET",
+		"headers": "Authorization: Bearer sdgRC0frQ7Au5XWK65II\nAccessKey: ESIF_Identity_APP\n",
+		"data": [],
+		"dataMode": "params",
+		"timestamp": 0,
+		"responses": [],
+		"version": 2
+	},
+	{
+		"collectionId": "a6363f1d-3a30-31fd-b8b8-bcd034310700",
 		"id": "68340918-94fb-a85a-1ba8-0081850ae66f",
 		"name": "Payment Charge API",
 		"description": "",
