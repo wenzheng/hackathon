@@ -1,0 +1,294 @@
+{
+   "id":"6e13a1f7-406a-d61b-7352-342318c44a90",
+   "name":"ECMR Test",
+   "description":"",
+   "order":[
+      "1f5364ac-5286-3546-1ec8-f89869c721e6",
+      "70b0a023-800a-ec5a-4de5-576c2dd64e01",
+      "8eceed5a-bff5-ba92-4b8b-ab0e68ccfeb7",
+      "cc523ea9-5ad4-1055-5b83-28c84f1df7ae",
+      "99767ac7-55ba-d3b3-007f-2ad04583bc11",
+      "886da093-56b2-18a9-e678-de58d9379ccd",
+      "a7c525fd-aede-e1d7-047d-59d8ac0c4ddf",
+      "1687dc26-0286-f625-e297-ea99e214dd22",
+      "f8e18130-e718-ffda-cb3f-d575ee30b359",
+      "9f27222e-6f8d-85fd-df66-06b03d16454b",
+      "3c5ebb81-e809-5d73-d940-f3353a8a2635",
+      "f7ceec3a-a118-094d-3968-1d3fdadd8101",
+      "a9d835f3-cf24-e84f-a4ee-322d0ab66c02",
+      "d70a37c1-f617-1738-8dc4-889b3b9addc1",
+      "59088480-077e-d098-335f-4635b6e81b00",
+      "91eed197-8107-94ab-c6f9-bde426b55404"
+   ],
+   "folders":[
+
+   ],
+   "timestamp":1430327411699,
+   "synced":false,
+   "owner":0,
+   "sharedWithTeam":false,
+   "subscribed":false,
+   "remoteLink":"",
+   "public":false,
+   "write":true,
+   "requests":[
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"1687dc26-0286-f625-e297-ea99e214dd22",
+         "name":"220 - Get all product specifications",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productSpecification/?project=testProject",
+         "method":"GET",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"1f5364ac-5286-3546-1ec8-f89869c721e6",
+         "name":"001 - Create project",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/project",
+         "method":"POST",
+         "headers":"Accept: application/json\nContent-Type: application/json\n",
+         "data":"{\r\n    \"id\": \"testProject\",\r\n    \"name\": \"Test Project\",\r\n    \"description\": \"A test project\",\r\n    \"effectiveDate\": \"2014-06-27T04:00:00.000Z\",\r\n    \"state\": \"DEF\"\r\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"3c5ebb81-e809-5d73-d940-f3353a8a2635",
+         "name":"400 - Update test offer",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+         "method":"PUT",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":"{\r\n\t\"id\": \"testOffering2\",\r\n\t\"href\": \"http://serverlocation:port/catalogManagement/productOffering/testOffering2\",\r\n\t\"version\": \"1.0\",\r\n\t\"name\": \"testOffering2\",\r\n\t\"description\": \"Virtual Storage Medium Update\",\r\n\t\"isBundle\": \"false\",\r\n\t\"lifecycleStatus\": \"In design\",\r\n\t\"validFor\": {\r\n\t\t\"startDateTime\": \"2015-04-19T16:42:23:000Z\",\r\n\t\t\"endDateTime\": \"2015-05-19T16:42:23:000Z\"\r\n\t},\r\n\t\"category\": [\r\n\t\t{\r\n\t\t\t\"id\": \"testCategory1\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/category/testCategory1\",\r\n\t\t\t\"version\": \"1.0\",\r\n\t\t\t\"name\": \"Test Category 1\"\r\n\t\t}\r\n\t],\r\n\t\"channel\": [\r\n\t\t{\r\n\t\t\t\"id\": \"13\",\r\n\t\t\t\"href\": \"http://serverlocation:port/marketSales/channel/13\",\r\n\t\t\t\"name\": \"Online Channel\"\r\n\t\t}\r\n\t],\r\n\t\"place\": [\r\n\t\t{\r\n\t\t\t\"id\": \"12\",\r\n\t\t\t\"href\": \"http://serverlocation:port/marketSales/place/12\",\r\n\t\t\t\"name\": \"France\"\r\n\t\t}\r\n\t],\r\n\t\"serviceLevelAgreement\": {\r\n\t\t\"id\": \"28\",\r\n\t\t\"href\": \"http://serverlocation:port/slaManagement/serviceLevelAgreement/28\",\r\n\t\t\"name\": \"Standard SLA\"\r\n\t},\r\n\t\"productSpecification\": {\r\n\t\t\t\"id\": \"I42_340_DX\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/13\",\r\n\t\t\t\"version\": \"2.0\",\r\n\t\t\t\"name\": \"specification product 1\"\r\n\t\t},\r\n\t\"serviceCandidate\": {\r\n\t\t\t\"id\": \"13\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/serviceCandidate/13\",\r\n\t\t\t\"version\": \"2.0\",\r\n\t\t\t\"name\": \"specification service 1\"\r\n\t\t},\r\n\t\"resourceCandidate\": {\r\n\t\t\t\"id\": \"13\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/resourceCandidate/13\",\r\n\t\t\t\"version\": \"2.0\",\r\n\t\t\t\"name\": \"specification resource 1\"\r\n\t\t},\r\n\t\"productOfferingTerm\": [\r\n\t\t{\r\n\t\t\t\"name\": \"12 Month\",\r\n\t\t\t\"description\": \"12 month contract\",\r\n\t\t\t\"duration\": \"12\",\r\n\t\t\t\"validFor\": {\r\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\r\n\t\t\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\r\n\t\t\t}\r\n\t\t}\r\n\t],\r\n\t\"productOfferingPrice\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Monthly Price\",\r\n\t\t\t\"description\": \"monthlyprice\",\r\n\t\t\t\"validFor\": {\r\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\r\n\t\t\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\r\n\t\t\t},\r\n\t\t\t\"priceType\": \"recurring\",\r\n\t\t\t\"unitOfMeasure\": \"\",\r\n\t\t\t\"price\": {\r\n\t\t\t\t\"taxIncludedAmount\": \"12.00\",\r\n\t\t\t\t\"dutyFreeAmount\": \"10.00\",\r\n\t\t\t\t\"taxRate\": \"20.00\",\r\n\t\t\t\t\"currencyCode\": \"EUR\"\r\n\t\t\t},\r\n\t\t\t\"recurringChargePeriod\": \"monthly\"\r\n\t\t}, {\r\n\t\t\t\"name\": \"Usage Price\",\r\n\t\t\t\"description\": \"usageprice\",\r\n\t\t\t\"validFor\": {\r\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\r\n\t\t\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\r\n\t\t\t},\r\n\t\t\t\"priceType\": \"usage\",\r\n\t\t\t\"unitOfMeasure\": \"second\",\r\n\t\t\t\"price\": {\r\n\t\t\t\t\"taxIncludedAmount\": \"12.00\",\r\n\t\t\t\t\"dutyFreeAmount\": \"10.00\",\r\n\t\t\t\t\"taxRate\": \"20.00\",\r\n\t\t\t\t\"currencyCode\": \"EUR\"\r\n\t\t\t},\r\n\t\t\t\"recurringChargePeriod\": \"\"\r\n\t\t}\r\n\t]\r\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"59088480-077e-d098-335f-4635b6e81b00",
+         "name":"500 - Delete test offer",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+         "method":"DELETE",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"70b0a023-800a-ec5a-4de5-576c2dd64e01",
+         "name":"100 - Create Category",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productCategory?project=testProject",
+         "method":"POST",
+         "headers":"Accept: application/json\nContent-Type: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\n",
+         "data":"{\n    \"id\": \"testCategory1\",\n    \"href\": \"http://serverlocation:port/catalogManagement/category/testCategory1\",\n    \"version\": \"1.0\",\n    \"lifecycleStatus\": \"In design\",\n    \"validFor\": {\n        \"startDateTime\": \"2015-04-19T16:42:23:000Z\",\n        \"endDateTime\": \"\"\n    },\n    \"isRoot\": \"true\",\n    \"name\": \"Test Category 1\",\n    \"description\": \"A category to hold all available categories\"\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"886da093-56b2-18a9-e678-de58d9379ccd",
+         "name":"300 - Create test offer",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productOffering?project=testProject",
+         "method":"POST",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":"{\r\n\t\"id\": \"testOffering2\",\r\n\t\"href\": \"http://serverlocation:port/catalogManagement/productOffering/testOffering2\",\r\n\t\"version\": \"1.0\",\r\n\t\"name\": \"testOffering2\",\r\n\t\"description\": \"Virtual Storage Medium\",\r\n\t\"isBundle\": \"false\",\r\n\t\"lifecycleStatus\": \"In design\",\r\n\t\"validFor\": {\r\n\t\t\"startDateTime\": \"2015-04-19T16:42:23:000Z\",\r\n\t\t\"endDateTime\": \"2015-05-19T16:42:23:000Z\"\r\n\t},\r\n\t\"category\": [\r\n\t\t{\r\n\t\t\t\"id\": \"testCategory1\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/category/testCategory1\",\r\n\t\t\t\"version\": \"1.0\",\r\n\t\t\t\"name\": \"Test Category 1\"\r\n\t\t}\r\n\t],\r\n\t\"channel\": [\r\n\t\t{\r\n\t\t\t\"id\": \"13\",\r\n\t\t\t\"href\": \"http://serverlocation:port/marketSales/channel/13\",\r\n\t\t\t\"name\": \"Online Channel\"\r\n\t\t}\r\n\t],\r\n\t\"place\": [\r\n\t\t{\r\n\t\t\t\"id\": \"12\",\r\n\t\t\t\"href\": \"http://serverlocation:port/marketSales/place/12\",\r\n\t\t\t\"name\": \"France\"\r\n\t\t}\r\n\t],\r\n\t\"serviceLevelAgreement\": {\r\n\t\t\"id\": \"28\",\r\n\t\t\"href\": \"http://serverlocation:port/slaManagement/serviceLevelAgreement/28\",\r\n\t\t\"name\": \"Standard SLA\"\r\n\t},\r\n\t\"productSpecification\": {\r\n\t\t\t\"id\": \"I42_340_DX\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/13\",\r\n\t\t\t\"version\": \"2.0\",\r\n\t\t\t\"name\": \"specification product 1\"\r\n\t\t},\r\n\t\"serviceCandidate\": {\r\n\t\t\t\"id\": \"13\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/serviceCandidate/13\",\r\n\t\t\t\"version\": \"2.0\",\r\n\t\t\t\"name\": \"specification service 1\"\r\n\t\t},\r\n\t\"resourceCandidate\": {\r\n\t\t\t\"id\": \"13\",\r\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/resourceCandidate/13\",\r\n\t\t\t\"version\": \"2.0\",\r\n\t\t\t\"name\": \"specification resource 1\"\r\n\t\t},\r\n\t\"productOfferingTerm\": [\r\n\t\t{\r\n\t\t\t\"name\": \"12 Month\",\r\n\t\t\t\"description\": \"12 month contract\",\r\n\t\t\t\"duration\": \"12\",\r\n\t\t\t\"validFor\": {\r\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\r\n\t\t\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\r\n\t\t\t}\r\n\t\t}\r\n\t],\r\n\t\"productOfferingPrice\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Monthly Price\",\r\n\t\t\t\"description\": \"monthlyprice\",\r\n\t\t\t\"validFor\": {\r\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\r\n\t\t\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\r\n\t\t\t},\r\n\t\t\t\"priceType\": \"recurring\",\r\n\t\t\t\"unitOfMeasure\": \"\",\r\n\t\t\t\"price\": {\r\n\t\t\t\t\"taxIncludedAmount\": \"12.00\",\r\n\t\t\t\t\"dutyFreeAmount\": \"10.00\",\r\n\t\t\t\t\"taxRate\": \"20.00\",\r\n\t\t\t\t\"currencyCode\": \"EUR\"\r\n\t\t\t},\r\n\t\t\t\"recurringChargePeriod\": \"monthly\"\r\n\t\t}, {\r\n\t\t\t\"name\": \"Usage Price\",\r\n\t\t\t\"description\": \"usageprice\",\r\n\t\t\t\"validFor\": {\r\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\r\n\t\t\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\r\n\t\t\t},\r\n\t\t\t\"priceType\": \"usage\",\r\n\t\t\t\"unitOfMeasure\": \"second\",\r\n\t\t\t\"price\": {\r\n\t\t\t\t\"taxIncludedAmount\": \"12.00\",\r\n\t\t\t\t\"dutyFreeAmount\": \"10.00\",\r\n\t\t\t\t\"taxRate\": \"20.00\",\r\n\t\t\t\t\"currencyCode\": \"EUR\"\r\n\t\t\t},\r\n\t\t\t\"recurringChargePeriod\": \"\"\r\n\t\t}\r\n\t]\r\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"8eceed5a-bff5-ba92-4b8b-ab0e68ccfeb7",
+         "name":"110 - Get All Categories",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productCategory?project=esif",
+         "method":"GET",
+         "headers":"Accept: application/json\nContent-Type: application/json\nAuthorization: Basic Y2F0bWFpbnJlc3RhcGk6Y2F0bWFpbnJlc3RhcGk=\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"91eed197-8107-94ab-c6f9-bde426b55404",
+         "name":"510 - Delete product specification",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
+         "method":"DELETE",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"99767ac7-55ba-d3b3-007f-2ad04583bc11",
+         "name":"200 - Create product specification",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productSpecification?project=testProject",
+         "method":"POST",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":"{\r\n    \"productNumber\": \"I42_340_DX\",\r\n    \"version\": \"2.0\",\r\n    \"lastUpdate\": \"2013-04-19T16:42:23.0Z\",\r\n    \"name\": \"iPhone 42\",\r\n    \"description\": \"Siri works on this iPhone\",\r\n    \"isBundle\": false,\r\n    \"brand\": \"Apple\",\r\n    \"lifecycleStatus\": \"In design\",\r\n    \"validFor\": {\r\n        \"startDateTime\": \"2013-06-19T00:00:00.0Z\",\r\n        \"endDateTime\": \"2013-07-19T16:42:23.0Z\"\r\n    },\r\n    \"relatedParty\": [\r\n        {\r\n            \"id\": \"1234\",\r\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\",\r\n            \"role\": \"Owner\"\r\n        }\r\n    ],\r\n    \"attachment\": [\r\n        {\r\n            \"id\": \"Pic_I42\",\r\n            \"href\": \"http://serverlocation:port/documentManagement/attachment/22\",\r\n            \"type\": \"Picture\",\r\n            \"url\": \"http://xxxxx\"\r\n        }\r\n    ],\r\n    \"productSpecificationRelationship\": [\r\n        {\r\n            \"id\": \"23\",\r\n            \"href\": \"http://serverlocation:port/productCatalogManagement/productSpecification/23\",\r\n            \"type\": \"dependency\",\r\n            \"validFor\": {\r\n                \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n            }\r\n        }\r\n    ],\r\n    \"serviceSpecification\": [\r\n        {\r\n            \"id\": \"13\",\r\n            \"href\": \"http://serverlocation:port/serviceCatalogManagement/serviceSpecification/13\",\r\n            \"name\": \"specification 13\",\r\n            \"version\": \"1.1\"\r\n        }\r\n    ],\r\n    \"resourceSpecification\": [\r\n        {\r\n            \"id\": \"13\",\r\n            \"href\": \"http://serverlocation:port/resourceCatalogManagement/resourceSpecification/13\",\r\n            \"name\": \"specification 13\",\r\n            \"version\": \"1.1\"\r\n        }\r\n    ],\r\n    \"productSpecCharacteristic\": [\r\n        {\r\n            \"name\": \"Screen Size\",\r\n            \"description\": \"Screen size\",\r\n            \"valueType\": \"number\",\r\n            \"configurable\": false,\r\n            \"ProductSpecCharacteristicValue\": [\r\n                {\r\n                    \"valueType\": \"number\",\r\n                    \"default\": true,\r\n                    \"value\": \"4.2\",\r\n                    \"unitOfMeasure\": \"inches\",\r\n                    \"valueFrom\": \"\",\r\n                    \"valueTo\": \"\",\r\n                    \"validFor\": {\r\n                        \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n                    }\r\n                }\r\n            ],\r\n            \"validFor\": {\r\n                \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n            }\r\n        },\r\n        {\r\n            \"name\": \"Colour\",\r\n            \"description\": \"Colour\",\r\n            \"valueType\": \"string\",\r\n            \"configurable\": true,\r\n            \"ProductSpecCharacteristicValue\": [\r\n                {\r\n                    \"valueType\": \"string\",\r\n                    \"default\": true,\r\n                    \"value\": \"Black\",\r\n                    \"unitOfMeasure\": \"\",\r\n                    \"valueFrom\": \"\",\r\n                    \"valueTo\": \"\",\r\n                    \"validFor\": {\r\n                        \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n                    }\r\n                },\r\n                {\r\n                    \"valueType\": \"string\",\r\n                    \"default\": false,\r\n                    \"value\": \"White\",\r\n                    \"unitOfMeasure\": \"\",\r\n                    \"valueFrom\": \"\",\r\n                    \"valueTo\": \"\",\r\n                    \"validFor\": {\r\n                        \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n                    }\r\n                }\r\n            ],\r\n            \"validFor\": {\r\n                \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n            }\r\n        }\r\n    ]\r\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"9f27222e-6f8d-85fd-df66-06b03d16454b",
+         "name":"300 - Get all offers",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productOffering/?project=testProject",
+         "method":"GET",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"a7c525fd-aede-e1d7-047d-59d8ac0c4ddf",
+         "name":"210 - Get product specification",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
+         "method":"GET",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"a9d835f3-cf24-e84f-a4ee-322d0ab66c02",
+         "name":"420 - Update Category",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
+         "method":"PUT",
+         "headers":"Accept: application/json\nContent-Type: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\n",
+         "data":"{\n    \"id\": \"testCategory1\",\n    \"href\": \"http://serverlocation:port/catalogManagement/category/testCategory1\",\n    \"version\": \"1.0\",\n    \"lifecycleStatus\": \"In design\",\n    \"validFor\": {\n        \"startDateTime\": \"2015-04-19T16:42:23:000Z\",\n        \"endDateTime\": \"\"\n    },\n    \"isRoot\": \"true\",\n    \"name\": \"Test Category 1\",\n    \"description\": \"A category to hold a test category\"\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"cc523ea9-5ad4-1055-5b83-28c84f1df7ae",
+         "name":"120 - Get testCategory",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
+         "method":"GET",
+         "headers":"Accept: application/json\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"d70a37c1-f617-1738-8dc4-889b3b9addc1",
+         "name":"520 - DELETE testCategory",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
+         "method":"DELETE",
+         "headers":"Accept: application/json\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"f7ceec3a-a118-094d-3968-1d3fdadd8101",
+         "name":"410 - Update product specification",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
+         "method":"PUT",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":"{\r\n    \"productNumber\": \"I42_340_DX\",\r\n    \"version\": \"2.0\",\r\n    \"lastUpdate\": \"2013-04-19T16:42:23.0Z\",\r\n    \"name\": \"iPhone 42\",\r\n    \"description\": \"Siri works very well on this iPhone\",\r\n    \"isBundle\": false,\r\n    \"brand\": \"Apple\",\r\n    \"lifecycleStatus\": \"In design\",\r\n    \"validFor\": {\r\n        \"startDateTime\": \"2013-06-19T00:00:00.0Z\",\r\n        \"endDateTime\": \"2013-07-19T16:42:23.0Z\"\r\n    },\r\n    \"relatedParty\": [\r\n        {\r\n            \"id\": \"1234\",\r\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\",\r\n            \"role\": \"Owner\"\r\n        }\r\n    ],\r\n    \"attachment\": [\r\n        {\r\n            \"id\": \"Pic_I42\",\r\n            \"href\": \"http://serverlocation:port/documentManagement/attachment/22\",\r\n            \"type\": \"Picture\",\r\n            \"url\": \"http://xxxxx\"\r\n        }\r\n    ],\r\n    \"productSpecificationRelationship\": [\r\n        {\r\n            \"id\": \"23\",\r\n            \"href\": \"http://serverlocation:port/productCatalogManagement/productSpecification/23\",\r\n            \"type\": \"dependency\",\r\n            \"validFor\": {\r\n                \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n            }\r\n        }\r\n    ],\r\n    \"serviceSpecification\": [\r\n        {\r\n            \"id\": \"13\",\r\n            \"href\": \"http://serverlocation:port/serviceCatalogManagement/serviceSpecification/13\",\r\n            \"name\": \"specification 13\",\r\n            \"version\": \"1.1\"\r\n        }\r\n    ],\r\n    \"resourceSpecification\": [\r\n        {\r\n            \"id\": \"13\",\r\n            \"href\": \"http://serverlocation:port/resourceCatalogManagement/resourceSpecification/13\",\r\n            \"name\": \"specification 13\",\r\n            \"version\": \"1.1\"\r\n        }\r\n    ],\r\n    \"productSpecCharacteristic\": [\r\n        {\r\n            \"name\": \"Screen Size\",\r\n            \"description\": \"Screen size\",\r\n            \"valueType\": \"number\",\r\n            \"configurable\": false,\r\n            \"ProductSpecCharacteristicValue\": [\r\n                {\r\n                    \"valueType\": \"number\",\r\n                    \"default\": true,\r\n                    \"value\": \"5.1\",\r\n                    \"unitOfMeasure\": \"inches\",\r\n                    \"valueFrom\": \"\",\r\n                    \"valueTo\": \"\",\r\n                    \"validFor\": {\r\n                        \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n                    }\r\n                }\r\n            ],\r\n            \"validFor\": {\r\n                \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n            }\r\n        },\r\n        {\r\n            \"name\": \"Colour\",\r\n            \"description\": \"Colour\",\r\n            \"valueType\": \"string\",\r\n            \"configurable\": true,\r\n            \"ProductSpecCharacteristicValue\": [\r\n                {\r\n                    \"valueType\": \"string\",\r\n                    \"default\": true,\r\n                    \"value\": \"White\",\r\n                    \"unitOfMeasure\": \"\",\r\n                    \"valueFrom\": \"\",\r\n                    \"valueTo\": \"\",\r\n                    \"validFor\": {\r\n                        \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n                    }\r\n                },\r\n                {\r\n                    \"valueType\": \"string\",\r\n                    \"default\": false,\r\n                    \"value\": \"White\",\r\n                    \"unitOfMeasure\": \"\",\r\n                    \"valueFrom\": \"\",\r\n                    \"valueTo\": \"\",\r\n                    \"validFor\": {\r\n                        \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n                    }\r\n                }\r\n            ],\r\n            \"validFor\": {\r\n                \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\r\n            }\r\n        }\r\n    ]\r\n}",
+         "dataMode":"raw",
+         "responses":[
+
+         ],
+         "version":2
+      },
+      {
+         "collectionId":"6e13a1f7-406a-d61b-7352-342318c44a90",
+         "id":"f8e18130-e718-ffda-cb3f-d575ee30b359",
+         "name":"300 - Get test offer",
+         "description":"",
+         "url":"http://10.103.18.174:8080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+         "method":"GET",
+         "headers":"Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+         "data":[
+
+         ],
+         "dataMode":"params",
+         "responses":[
+
+         ],
+         "version":2
+      }
+   ]
+}
