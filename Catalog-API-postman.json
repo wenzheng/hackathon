@@ -19,7 +19,8 @@
       "972d80f1-7725-735f-ad99-8d7b9c9c19f4",
       "f785f9c3-e7e2-b3d2-f007-3e7a7675f576",
       "19764b84-91b9-4844-cd4f-e5d3ab25e720",
-      "97346127-925b-dfd4-4d5b-5cae7c0caea7"
+      "97346127-925b-dfd4-4d5b-5cae7c0caea7",
+      "ecacbd40-129c-db19-ffdc-54ce0ae83705"
     ],
   "owner" : 0,
   "public" : false,
@@ -203,6 +204,19 @@
         "name" : "400 - Update test offer",
         "responses" : [  ],
         "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+        "version" : 2
+      },
+      { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
+        "data" : "{\n\t\"externalID\": \"Bahman\",\n\t\"description\": \"A wonderful offer for Bahman\",\n\t\"type\": \"residential\",\n\t\"requestedCompletionDate\": \"2015-07-24T08:00:00.000Z\",\n\t\"relatedParties\": [{\n\t\t\"role\": \"customer\",\n\t\t\"reference\": \"MSISDN-0033689770600\"\n\t},\n\t{\n\t\t\"role\": \"partner\",\n\t\t\"reference\": \"http://serverlocation:port/partnerManagement/partner/42\"\n\t}],\n\t\"orderItems\": [{\n\t\t\"action\": \"add\",\n\t\t\"productOffering\": {\n\t\t\t\"id\": \"PO_basisHealthTracker\"\n\t\t}\n\n\t}]\n}",
+        "dataMode" : "raw",
+        "description" : "",
+        "headers" : "Accept: application/json\nAuthorization: Basic dXBhZG1pbjp1cGFkbWlu\nContent-Type: application/json\n",
+        "id" : "ecacbd40-129c-db19-ffdc-54ce0ae83705",
+        "method" : "POST",
+        "name" : "Create Order",
+        "responses" : [  ],
+        "timestamp" : 0,
+        "url" : "http://52.28.29.68:1080/eoc/omr/v1/order/",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
