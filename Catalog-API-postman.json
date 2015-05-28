@@ -34,7 +34,7 @@
         "method" : "GET",
         "name" : "120 - Get testCategory",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -46,7 +46,7 @@
         "method" : "DELETE",
         "name" : "001 - Delete project",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/project/testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/project/testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -58,7 +58,7 @@
         "method" : "POST",
         "name" : "200 - Create product specification",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productSpecification?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productSpecification?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -70,7 +70,7 @@
         "method" : "GET",
         "name" : "210 - Get product specification",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -82,7 +82,7 @@
         "method" : "GET",
         "name" : "110 - Get All Categories",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productCategory",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productCategory",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -94,7 +94,7 @@
         "method" : "PUT",
         "name" : "420 - Update Category",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -106,7 +106,7 @@
         "method" : "GET",
         "name" : "300 - Get test offer",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -118,7 +118,7 @@
         "method" : "POST",
         "name" : "100 - Create Category",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productCategory?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productCategory?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -130,7 +130,7 @@
         "method" : "GET",
         "name" : "300 - Get all offers",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productOffering/?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productOffering/?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -142,7 +142,7 @@
         "method" : "PUT",
         "name" : "410 - Update product specification",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -154,7 +154,7 @@
         "method" : "DELETE",
         "name" : "500 - Delete test offer",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -167,7 +167,7 @@
         "name" : "Get Order API",
         "responses" : [  ],
         "timestamp" : 0,
-        "url" : "http://52.28.29.68:1080/eoc/omr/v1/order",
+        "url" : "http://52.28.33.220/catalog/eoc/omr/v1/order",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -179,7 +179,7 @@
         "method" : "POST",
         "name" : "300 - Create test offer",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productOffering?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productOffering?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -191,7 +191,7 @@
         "method" : "GET",
         "name" : "220 - Get all product specifications",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productSpecification/?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productSpecification/?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -203,7 +203,7 @@
         "method" : "PUT",
         "name" : "400 - Update test offer",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productOffering/testOffering2?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -216,7 +216,7 @@
         "name" : "Create Order",
         "responses" : [  ],
         "timestamp" : 0,
-        "url" : "http://52.28.29.68:1080/eoc/omr/v1/order/",
+        "url" : "http://52.28.33.220/catalog/eoc/omr/v1/order/",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -228,7 +228,7 @@
         "method" : "POST",
         "name" : "001 - Create project",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/project",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/project",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -240,7 +240,7 @@
         "method" : "DELETE",
         "name" : "510 - Delete product specification",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productSpecification/I42_340_DX?project=testProject",
         "version" : 2
       },
       { "collectionId" : "b49c76f4-0688-1f2a-e1d8-23623e3ebc60",
@@ -252,7 +252,7 @@
         "method" : "DELETE",
         "name" : "520 - DELETE testCategory",
         "responses" : [  ],
-        "url" : "http://52.28.29.68:1080/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
+        "url" : "http://52.28.33.220/catalog/ecm/ecmr/CatalogManagement/v2/productCategory/testCategory1?project=testProject",
         "version" : 2
       }
     ],
