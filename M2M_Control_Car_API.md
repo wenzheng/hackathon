@@ -6,6 +6,8 @@ This API is used to retrieve all car related information, the format is:
 
 GET http://52.28.33.220:3000/vehicle/v2/{vin}
 
+Note: All the information can be reflected on the Car Emulator Dashboard at: http://52.28.33.220
+
 <table>
 <thead>
 <tr>
