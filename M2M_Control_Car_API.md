@@ -316,3 +316,7 @@ Note: All the information can be reflected on the Car Emulator Dashboard at: htt
 </table>
 
 Below is an example that how to  control the air flow direction
+
+Post: http://52.28.33.220/ericsson/vehicle/v2/12345678
+
+Data: {"airflow_direction":"floorduct"}
