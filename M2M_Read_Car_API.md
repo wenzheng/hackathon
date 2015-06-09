@@ -562,7 +562,7 @@ GET http://52.28.33.220:3000/vehicle/v2/{vin}
 <td style="text-align:left;"><p>Yes </p></td>
 <td style="text-align:left;"><p>The state of airebag OK/Failure</p></td>
 </tr>
-
-
 </tbody>
 </table>
+
+Sample: Get http://52.28.33.220/ericsson/vehicle/v2/12345678/drivelogs/1429558371
