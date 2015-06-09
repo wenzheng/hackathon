@@ -565,4 +565,4 @@ GET http://52.28.33.220:3000/vehicle/v2/{vin}
 </tbody>
 </table>
 
-Sample: Get http://52.28.33.220/ericsson/vehicle/v2/12345678/drivelogs/1429558371
+Sample: Get http://52.28.33.220/ericsson/vehicle/v2/12345678
