@@ -91,5 +91,5 @@ The endUserId value in URL and payload must be same.
 </tbody>
 </table>
 
-
+Example: Post: http://52.28.33.220/ericsson/oneapi/payment/1/tel:+8613580551660/transactions/amount?endUserId=tel:+8613580551660&transactionOperationStatus=Charged&description=&currency=EUR&amount=18&referenceCode=REF-1234
 
