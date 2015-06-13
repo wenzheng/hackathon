@@ -4,7 +4,7 @@ The authorized caller is able to query Location of a mobile device.
 
 **URL format**
 
-https://{serverRoot}/oneapi/location/1/queries/location?address={address}&requestedAccuracy={metres}
+https://{serverRoot}/ericsson/oneapi/location/1/queries/location?address={address}&requestedAccuracy={metres}
 
 **HTTP request**
 
@@ -74,9 +74,9 @@ In the above example, the recipients MSISDN is in tel URI(RFC3966) format. %3A r
 </table>
 
 **Example**
+Request GET: http://52.28.33.220/ericsson/oneapi/location/1/queries/location?requestedAccuracy=1000&address=tel%3A%2B16035558278
 
-GET http://52.28.33.220:3000/oneapi/location/1/queries/location?requestedAccuracy=1000&address=tel%3A%2B16035558278*emphasized text*
-
+Respnose:
     {
         "terminalLocationList": {
             "terminalLocation": [

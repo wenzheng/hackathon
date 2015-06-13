@@ -4,7 +4,7 @@ The authorized caller is able to send the SMS messages to one or more mobile ter
 
 **URL format**
 
-http://{serverRoot}/oneapi/sms/1/outbound/{senderAddress}/requests/
+http://{serverRoot}/ericsson/oneapi/sms/1/outbound/{senderAddress}/requests/
 
 **HTTP request**
 
@@ -75,17 +75,18 @@ http://{serverRoot}/oneapi/sms/1/outbound/{senderAddress}/requests/
 
 **Example**
 
-*Post: http://52.28.33.220:3000/oneapi/sms/1/outbound/tel%3A%2B123456789/requests*
+Request *Post http://52.28.33.220/ericsson/oneapi/sms/1/outbound/tel%3A%2B123456789/requests*
 
-    {
-        "outboundSMSMessageRequest":
-        {
-            "address": ["tel:+8613500220836"],
-            "clientCorrelator": "10002",
-            "outboundSMSTextMessage":           { "message": “Hello world!" },
-            "senderAddress": "tel:10086",
-            "senderName": “Hacker"
-        }
-    }
+    {"outboundSMSMessageRequest":{
+     "senderAddress":"tel%3A%2B123456789",
+     "outboundSMSTextMessage":{"message":"Hello World!"},
+     "address":["tel%3A%2B8613500000000"],
+	 "clientCorrelator": "12312",
+     "receiptRequest":{
+          "notifyURL":"https://example.com:7464/smsStatus",
+          "callbackData":"doSomething()"
+          }
+     }
+     }
 
 
